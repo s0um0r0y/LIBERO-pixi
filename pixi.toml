@@ -1,0 +1,26 @@
+[workspace]
+channels = ["conda-forge"]
+name = "LIBERO"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+tqdm = ">=4.67.3,<5"
+yaml = ">=0.2.5,<0.3"
+pyyaml = ">=6.0.3,<7"
+termcolor = ">=3.3.0,<4"
+nvitop = ">=1.6.2,<2"
+mujoco = { version = ">=3.6.0,<4", channel = "conda-forge" }
+mesalib = { version = ">=26.0.3,<27", channel = "conda-forge" }
+glew = { version = ">=2.3.0,<3", channel = "conda-forge" }
+glfw = { version = ">=3.4,<4", channel = "conda-forge" }
+pytorch = ">=2.10.0,<3"
+torchvision = ">=0.26.0,<0.27"
+torchaudio = ">=2.10.0,<3"
+lazygit = ">=0.61.1,<0.62"
+
+[pypi-dependencies]
+robosuite = ">=1.5.1, <2"
