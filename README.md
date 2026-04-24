@@ -60,6 +60,15 @@ Then install the `libero` package:
 ```
 pip install -e .
 ```
+or use pixi
+```bash
+# intial setup
+pixi install
+pixi shell
+
+# run commands (smoke test)
+pixi run python3 test_env.py    
+```
 
 # Datasets
 We provide high-quality human teleoperation demonstrations for the four task suites in **LIBERO**. To download the demonstration dataset, run:
